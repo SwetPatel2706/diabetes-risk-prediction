@@ -105,10 +105,18 @@ git clone https://github.com/SwetPatel2706/diabetes-risk-prediction.git
 cd diabetes-risk-prediction
 ```
 
-### 2. Set Up Virtual Environment
+### 2. Set Up & Activate Virtual Environment
 ```bash
+# Create virtual environment
 python3 -m venv .venv
+
+# Activate virtual environment (macOS/Linux)
 source .venv/bin/activate
+
+# On Windows (Command Prompt / PowerShell):
+# .venv\Scripts\activate
+
+# Install dependencies
 pip install -r requirements.txt
 ```
 
@@ -118,8 +126,13 @@ python train_pipeline.py
 ```
 
 ### 4. Launch the Streamlit App
+Make sure your virtual environment is activated (`source .venv/bin/activate`):
 ```bash
 streamlit run app.py
+```
+*Tip: You can also run directly without activating:*
+```bash
+.venv/bin/streamlit run app.py
 ```
 Open your browser at `http://localhost:8501`.
 
